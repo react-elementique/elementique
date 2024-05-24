@@ -20,9 +20,11 @@ import {Input} from "sld-ui";
 const Example = () => {
   return (
       <Input
-        size={"small"}
-        text={"Input"}
-        onClick={()=> console.log("Clicked")}
+        type="text"
+        onClick={() => {}}
+        disabled={false}
+        placeholder="Enter text"
+        size="small"
         primary
       />
   );
