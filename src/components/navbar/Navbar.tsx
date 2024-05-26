@@ -32,7 +32,7 @@ const StyledNavbar = styled.nav<NavbarProps>`
     font-family: ${(props) =>
         props.fontsProperty ? props.fontsProperty.family : "system-ui"};
     font-weight: ${(props) =>
-        props.fontsProperty ? props.fontsProperty.weight : "system-ui"};
+        props.fontsProperty ? props.fontsProperty.weight : "500"};
     padding: 10px 30px;
     background: ${(props) => (props.bgColor ? props.bgColor : "#fff")};
     .nav-logo__container {

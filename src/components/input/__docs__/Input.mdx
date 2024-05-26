@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Input from "./Input.stories.tsx";
+
+<Meta of={Input} title="Input" />
+
+# Input
+
+Input component with different props.
+
+#### Example
+
+<Canvas of={Input.Primary} />
+
+## Usage
+
+```ts
+import {Input} from "elementique";
+
+const Example = () => {
+  return (
+      <Input />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **type** - 
