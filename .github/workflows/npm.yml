@@ -10,14 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
       - run: npm install
       - run: npm run test
       - run: npm run build
-      - run: npm publish
-      - uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          registry: "https://npm.pkg.github.com"
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
