@@ -7,6 +7,7 @@ const Example: FC<ButtonProps> = ({
     primary = true,
     size = "small",
     text = "Button",
+    outline = false,
 }) => {
     return (
         <div
@@ -23,6 +24,7 @@ const Example: FC<ButtonProps> = ({
                 disabled={disabled}
                 onClick={onClick}
                 primary={primary}
+                outline={outline}
             />
         </div>
     );
