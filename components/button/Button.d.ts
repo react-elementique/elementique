@@ -3,6 +3,7 @@ import { default as React, MouseEventHandler } from '../../../node_modules/react
 export type ButtonProps = {
     text?: string;
     primary?: boolean;
+    outline?: boolean;
     disabled?: boolean;
     size?: "small" | "medium" | "large";
     onClick?: MouseEventHandler<HTMLButtonElement>;
