@@ -2,12 +2,13 @@ import React, { FC } from "react";
 import Button, { ButtonProps } from "../Button";
 
 const Example: FC<ButtonProps> = ({
-    disabled = false,
+    disabled,
     onClick = () => {},
-    primary = true,
+    primary,
     size = "small",
     text = "Button",
-    outline = false,
+    outline,
+    bg,
 }) => {
     return (
         <div
@@ -25,6 +26,7 @@ const Example: FC<ButtonProps> = ({
                 onClick={onClick}
                 primary={primary}
                 outline={outline}
+                bg={bg}
             />
         </div>
     );

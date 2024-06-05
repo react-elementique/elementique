@@ -13,7 +13,6 @@ export const Primary: Story = {
     args: {
         text: "Button",
         primary: true,
-        outline: false,
         disabled: false,
         size: "small",
         onClick: () => console.log("Button"),
@@ -23,7 +22,6 @@ export const Outline: Story = {
     args: {
         text: "Button",
         outline: true,
-        primary: false,
         disabled: false,
         size: "small",
         onClick: () => console.log("Button"),

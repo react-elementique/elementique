@@ -10,8 +10,16 @@ export default meta;
 type Story = StoryObj<typeof Example>;
 
 export const Primary: Story = {
-    args: {},
+    args: {
+        placeholder: "Enter text",
+        type: "text",
+        variant: "primary",
+    },
 };
-export const Custom: Story = {
-    args: {},
+export const Float: Story = {
+    args: {
+        placeholder: "Enter text",
+        type: "text",
+        variant: "float",
+    },
 };

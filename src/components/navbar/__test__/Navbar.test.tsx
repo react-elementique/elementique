@@ -6,7 +6,7 @@ import Navbar from "../Navbar";
 describe("Navbar component", () => {
     it("should render Navbar component correctly", () => {
         render(<Navbar />);
-        const element = screen.getByRole("navigation");
-        expect(element).toBeInTheDocument();
+        const navbar = screen.getByRole("navigation");
+        expect(navbar).toBeInTheDocument();
     });
 });

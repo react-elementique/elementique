@@ -66,7 +66,7 @@ const StyledNavbar = styled.nav<NavbarProps>`
         position: absolute;
         top: 60px;
         left: 0;
-        width: 100%;
+        width: calc(100% - 60px);
         height: calc(100% - 60px);
         display: flex;
         flex-direction: column;
@@ -105,18 +105,7 @@ const StyledMenu = styled.div`
     }
 `;
 
-const Navbar: React.FC<NavbarProps> = ({
-    type,
-    logo,
-    title,
-    links,
-    fontsProperty,
-    className,
-    bgColor,
-}) => {
-    console.log(type);
-    console.log(fontsProperty);
-    console.log(bgColor);
+const Navbar: React.FC<NavbarProps> = ({ logo, title, links, className }) => {
     const [navToggle, setNavToggle] = React.useState(false);
     const [isSmallScreen, setIsSmallScreen] = React.useState(false);
     const [windowSize, setWindowSize] = React.useState(getWindowSize());

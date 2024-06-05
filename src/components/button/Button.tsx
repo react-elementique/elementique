@@ -8,6 +8,7 @@ export type ButtonProps = {
     disabled?: boolean;
     size?: "small" | "medium" | "large";
     onClick?: MouseEventHandler<HTMLButtonElement>;
+    bg?: string;
 };
 
 const StyledButton = styled.button<ButtonProps>`
@@ -23,9 +24,12 @@ const StyledButton = styled.button<ButtonProps>`
     border-radius: 10px;
     display: inline-block;
     color: ${(props) => (props.primary ? "#fff" : "#000")};
-    background-color: ${(props) => (props.primary ? "#FF5655" : "transparent")};
+    ${(props) =>
+        props.primary && `background: ${props.bg ? props.bg : "#FF5655"}`};
+    ${(props) => props.outline && `background: transparent`};
     border: ${(props) => (props.outline ? "2px solid" : "none")};
-    border-color: ${(props) => (props.outline ? "#000" : "transparent")};
+    ${(props) =>
+        props.outline && `border-color: ${props.bg ? props.bg : "#000"}`};
     padding: ${(props) =>
         props.size === "small"
             ? "10px 18px"

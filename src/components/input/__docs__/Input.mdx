@@ -8,7 +8,7 @@ import * as Input from "./Input.stories.tsx";
 
 Input component with different props.
 
-#### Example
+#### Primary
 
 <Canvas of={Input.Primary} />
 
@@ -19,7 +19,25 @@ import {Input} from "elementique";
 
 const Example = () => {
   return (
-      <Input />
+      <Input placeholder="Enter text" variant={"primary"} />
+  );
+};
+
+export default Example;
+```
+
+#### Float
+
+<Canvas of={Input.Float} />
+
+## Usage
+
+```ts
+import {Input} from "elementique";
+
+const Example = () => {
+  return (
+      <Input placeholder="Enter text" variant={"float"} />
   );
 };
 
@@ -28,4 +46,14 @@ export default Example;
 
 #### Arguments
 
-- **type** - 
+- **variant** - <em>primary</em> or <em>float</em>
+- **name** - This value will be passed to the id and name tags of input
+- **type** - This prop accepts the type of input ex: <em>text</em>, <em>email</em>
+- **width** - Custom width of the input
+- **maxWidth** - Maximum width of the input
+- **p** - Custom padding for the input
+- **placeholder** - This props accepts the prop to be displayed as the placeholder for the input
+- **setValue** - This prop is for the React useState <em>setValue</em> function to change the <em>value</em>
+- **value** - The value entered inside the input can be accessed using this prop
+- **border** - Custom border for the input box
+- **fontsProperty** - Custom fontsProperty is to be entered here in the form of an object: \{ size: string, weight: number, family: string \}
