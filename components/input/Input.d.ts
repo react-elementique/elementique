@@ -1,6 +1,8 @@
 import { default as React } from '../../../node_modules/react';
 
 export type InputProps = {
+    variant?: "primary" | "float";
+    name?: string | "float_input";
     type?: string | "text";
     width?: string | "100%";
     maxWidth?: string | "640px";
@@ -14,10 +16,11 @@ export type InputProps = {
         radius: string;
     };
     fontsProperty?: {
-        size: string;
-        weight: number;
-        family: string;
+        size?: string;
+        weight?: number;
+        family?: string;
     };
+    hasValue?: boolean;
 };
 declare const Input: React.FC<InputProps>;
 export default Input;

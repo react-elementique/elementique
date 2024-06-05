@@ -7,6 +7,7 @@ export type ButtonProps = {
     disabled?: boolean;
     size?: "small" | "medium" | "large";
     onClick?: MouseEventHandler<HTMLButtonElement>;
+    bg?: string;
 };
 declare const Button: React.FC<ButtonProps>;
 export default Button;
