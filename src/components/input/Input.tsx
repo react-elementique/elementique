@@ -61,6 +61,7 @@ const Input: React.FC<InputProps> = ({
 export default Input;
 
 const StyledInput = styled.input<InputProps>`
+    position: relative;
     padding: ${(props) => (props.p ? props.p : "10px 14px")};
     width: ${(props) => props.width};
     max-width: ${(props) => props.maxWidth};

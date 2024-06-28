@@ -6,7 +6,7 @@ import Input from "../Input";
 describe("Input component", () => {
     it("should render Input component correctly", () => {
         render(<Input />);
-        const input = screen.getByRole("textbox");
-        expect(input).toBeInTheDocument();
+        const inputFile = screen.getByRole("textbox");
+        expect(inputFile).toBeInTheDocument();
     });
 });
