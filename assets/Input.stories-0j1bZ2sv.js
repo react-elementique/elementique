@@ -1,4 +1,5 @@
 import{p as i,j as t}from"./styled-components.browser.esm-nkDTgOUP.js";const g=({type:e,name:l,variant:b,value:s,placeholder:d,setValue:a})=>t.jsx(t.Fragment,{children:b==="primary"?t.jsx(w,{placeholder:d,type:e,value:s,onChange:o=>a&&a(o.target.value)}):t.jsxs(v,{children:[t.jsx(h,{type:e,name:l,id:l,value:s,onChange:o=>a&&a(o.target.value),hasValue:!!s}),t.jsx(q,{children:d})]})}),w=i.input`
+    position: relative;
     padding: ${e=>e.p?e.p:"10px 14px"};
     width: ${e=>e.width};
     max-width: ${e=>e.maxWidth};
