@@ -1,6 +1,6 @@
 {
   "name": "elementique",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -44,6 +44,7 @@
     "@types/react": "^18.3.2",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
+    "@vitest/ui": "^1.6.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",

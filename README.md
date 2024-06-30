@@ -10,11 +10,8 @@
 <h4 align="center">A highly customizable component library built to make development faster <a href="https://github.com/react-elementique/elementique" target="_blank">Elementique</a>.</h4>
 
 <p align="center">
-  <a href="https://discord.gg/UaqB9qDC">
+  <a href="https://discord.com/channels/1247619398374785034">
       <img alt="Discord" src="https://img.shields.io/discord/1247619398374785034">
-  </a>
-  <a href="https://buymeacoffee.com/mrdevknown404">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
 </p>
 
@@ -71,11 +68,11 @@ $ npm run build
 
 > **Note**
 Are you interested to contribute to this project?
-Check out <a href="https://github.com/react-elementique/elementique/blob/main/CONTRIBUTING.md">Contribution Guidelines</a>
+Check out <a href="https://github.com/react-elementique/elementique/blob/main/CONTRIBUTING_GUIDELINES.md">Contribution Guidelines</a>
 
-## Support
+## Join our community
 
-<a href="https://www.buymeacoffee.com/mrdevknown404" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+[Discord](https://discord.com/channels/1247619398374785034)
 
 ## Community
 
