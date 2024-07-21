@@ -8,7 +8,7 @@ import Sidebar from "../Sidebar";
 describe("Navbar component", () => {
     it("should render Navbar component correctly", () => {
         render(<Sidebar />);
-        const el = screen.getByRole("navigation");
-        expect(el).toBeInTheDocument();
+        const sidebar = screen.getByRole("navigation");
+        expect(sidebar).toBeInTheDocument();
     });
 });

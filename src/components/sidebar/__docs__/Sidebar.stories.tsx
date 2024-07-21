@@ -12,6 +12,3 @@ type Story = StoryObj<typeof Example>;
 export const Standard: Story = {
     args: {},
 };
-export const Custom: Story = {
-    args: {},
-};

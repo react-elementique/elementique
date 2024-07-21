@@ -1,0 +1,52 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Sidebar from "./Sidebar.stories.tsx";
+
+<Meta of={Sidebar} title="Sidebar" />
+
+# Sidebar
+
+Sidebar component with different props.
+
+#### Example
+
+<Canvas of={Sidebar.Standard} />
+
+## Usage
+
+```ts
+import {Sidebar} from "elementique";
+
+const Example = () => {
+  return (
+      <Sidebar
+        type={"normal"}
+        logo={null}
+        title={"Sidebar"}
+        links={[
+            {
+                label: "Home",
+                href: "/home",
+            },
+            {
+                label: "About",
+                href: "/about",
+            },
+        ]}
+        className={null}
+    />
+  );
+};
+
+export default Example;
+```
+
+#### Arguments
+
+- **type** - 
+- **logo** - 
+- **title** -
+- **links** - 
+- **fontsProperty** -
+- **className** - 
+- **bgColor** - 
